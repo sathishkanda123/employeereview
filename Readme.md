@@ -7,7 +7,7 @@ Use Dbeaver or Mysql workbench for database
 
 Pre-Requirements
 ...............
-Database should be created in the name of organization and run in default port Mysql
+Database should be created in the name of organization and run in default port Mysql, Please change ur mysql username and password inside application.propertiesfile
 
 For running from intelliji or eclipse 
 right click on EmpoyeeperformenceApplication.java and run as java application
@@ -37,7 +37,7 @@ HTML,CSS,JS,AJAX
 BACKEND
 .......
 
-JAVA 11, SPRING BOOT
+JAVA 11, SPRING BOOT, JPA
 
 DATABASE
 ........
