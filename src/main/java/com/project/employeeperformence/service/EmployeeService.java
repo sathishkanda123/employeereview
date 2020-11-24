@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.project.employeeperformence.repository.EmployeeRepository;
 
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class EmployeeService {
@@ -18,10 +20,9 @@ public class EmployeeService {
 
 
     public ResponseEntity<List<Employee>> getAllEmployees(){
-        List<Employee> all = this.employeeRepository.findAll();
-        return new ResponseEntity<>(all, HttpStatus.ACCEPTED);
+        List<Employee> employees = this.employeeRepository.findAll();
+        return new ResponseEntity<>(employees, HttpStatus.ACCEPTED);
     }
-
 
     public ResponseEntity saveEmployees(Employee employee){
         try{

@@ -22,6 +22,12 @@ java -jar jarname
 Once run the application open as
 http://localhost:8080/index.html
 
+for adding new employee review
+..............................
+http://localhost:8080/employeeAdd.html
+
+for employee list
+http://localhost:8080/employeeList.html
 
 Front End
 .......

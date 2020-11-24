@@ -13,18 +13,17 @@ function initFunction(){
                      data: dataSet,
                      columns: [
                          { title: "EmployeeName" },
-                         { title: "EmployeeNumber" },
                          { title: "Profile" },
+                         { title: "EmployeeNumber" },
                          { title: "TeamWork" },
                          { title: "GoalSettings" },
-                         { title: "Attendance" },
+                         { title: "TimeManagement" },
                          { title: "OverAllPerformance" },
+                         { title: "TypeOfBand" },
                          { title: "Skills" },
-                         { title: "Languages" },
-                         { title: "TypeOfBand" }
+                         { title: "Languages" }
                      ]
                  });
              });
    })
 }
-

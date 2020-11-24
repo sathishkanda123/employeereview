@@ -10,6 +10,7 @@ import com.project.employeeperformence.repository.AdminRepository;
 import com.project.employeeperformence.service.EmployeeService;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping(value="/employee")
@@ -31,7 +32,6 @@ public class EmployeeController {
       return this.employeeService.getAllEmployees();
     }
 
-    // http://localhost:8080/springmvc/hello/101?param1=10&param2=20
     @GetMapping(value="/find")
     public ResponseEntity findAdmin(@RequestParam(value="user", required=true) String userName,
                                     @RequestParam(value="password", required=false) String password){

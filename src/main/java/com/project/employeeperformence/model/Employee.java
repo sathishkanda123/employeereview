@@ -32,6 +32,7 @@ public class Employee {
 
     private String timeManagement;
 
+    @JsonIgnore
     private String attendance;
 
     private String overAllPerformance;
@@ -45,18 +46,23 @@ public class Employee {
     public Employee(){
 
     }
-    public Employee(String empName , String empNo, String profile, String teamWork, String goalSettings, String attendance, String overAllPerformance, String skills,
+
+    public Employee(String empName , String empNo, String profile,
+                    String teamWork, String goalSettings, String timeManagement, String attendance,
+                    String overAllPerformance, String skills,
                     String languages, String typeOfBand){
         this.empName = empName;
         this.empNo = empNo;
         this.profile = profile;
         this.teamWork = teamWork;
         this.goalSettings = goalSettings;
+        this.timeManagement = timeManagement;
         this.attendance = attendance;
         this.overAllPerformance = overAllPerformance;
         this.skills = skills;
         this.languages = languages;
         this.typeOfBand = typeOfBand;
     }
+
 
 }
