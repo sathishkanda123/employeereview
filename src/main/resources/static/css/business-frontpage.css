@@ -1,0 +1,31 @@
+/*!
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/template/business-frontpage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 50px;
+}
+
+#example th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+
+#example {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#example td, #example th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#example tr:nth-child(even){background-color: #f2f2f2;}
+
+#example tr:hover {background-color: #ddd;}

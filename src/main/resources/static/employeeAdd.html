@@ -1,0 +1,125 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <style>
+        body {
+           width : 80%;
+           margin-left: 70px;
+           padding-top: 50px !important;
+         }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+    <a class="navbar-brand" href="index.html" target="_self">HCM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html" target="_self">Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="employeeList.html" target="_self">Employee Review List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="employeeAdd.html" target="_self">Add Employee Review</a>
+                <span class="sr-only">(current)</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<h2>Add Employee</h2>
+<form onsubmit="return false;">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="empName">EmployeeName</label>
+            <input type="text" class="form-control" id="empName" placeholder="employeeName">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="empNo">EmployeeNumber</label>
+            <input type="text" class="form-control" id="empNo" placeholder="employeeNo">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="profile">Profile</label>
+            <input type="text" class="form-control" id="profile" placeholder="profile">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="teamWork">TeamWork</label>
+            <select id="teamWork" class="form-control">
+                <option selected>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="goalSettings">GoalSettings</label>
+            <select id="goalSettings" class="form-control">
+                <option selected>Completed</option>
+                <option>Not Completed</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="timeManagement">Time Management</label>
+            <select id="timeManagement" class="form-control">
+                <option selected>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="attendance">Attendance</label>
+            <input type="text" class="form-control" id="attendance" placeholder="attendance">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="overAllPerformance">OverAllPerformance</label>
+            <select id="overAllPerformance" class="form-control">
+                <option selected>Good</option>
+                <option>Average</option>
+                <option>Bad</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="skills">Skills</label>
+            <input type="text" class="form-control" id="skills" placeholder="skills">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="languages">Languages</label>
+            <input type="text" class="form-control" id="languages" placeholder="languages">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="typeOfBand">TypeOfBand</label>
+            <select id="typeOfBand" class="form-control">
+                <option selected>Experience</option>
+                <option>Entry</option>
+                <option>Management</option>
+            </select>
+        </div>
+    </div>
+    <input type="button" value="Save" class="btn btn-primary" onclick="save()" />
+</form>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="employeeAdd.js"></script>
+</body>
+
+</html>
